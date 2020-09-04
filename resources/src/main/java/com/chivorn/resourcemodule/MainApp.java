@@ -55,7 +55,7 @@ public class MainApp<T> extends AppCompatActivity implements View.OnClickListene
         provinceList = new ArrayList<>();
         countryList = new ArrayList<>();
 
-        provinceList.add("Banteay Meanchey");
+        provinceList.add("اولین مورد");
         provinceList.add("Battambang");
         provinceList.add("Kampong Cham");
         provinceList.add("Kampong Chhnang");

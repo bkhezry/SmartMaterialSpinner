@@ -31,6 +31,7 @@ import android.text.StaticLayout;
 import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -677,6 +678,7 @@ public class SmartMaterialSpinner<T> extends AppCompatSpinner implements Adapter
     }
 
     private void drawSelector(Canvas canvas, int posX, int posY) {
+        posX = 58;
         paint.setColor(isEnabled() ? arrowColor : disabledColor);
         Point point1 = selectorPoints[0];
         Point point2 = selectorPoints[1];

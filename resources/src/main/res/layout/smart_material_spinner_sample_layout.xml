@@ -26,8 +26,7 @@
             app:smsp_searchHeaderText="Search/Select Province"
             app:smsp_searchHeaderTextColor="#ffff"
             app:smsp_searchHintColor="@color/search_hint_color"
-            app:smsp_searchTextColor="@color/search_text_color"
-            app:smsp_typeface="fonts/hinted_cello_sans_light" />
+            app:smsp_searchTextColor="@color/search_text_color" />
 
         <TextView
             style="@style/headerTextStyle"
@@ -38,8 +37,7 @@
             style="@style/spinnerStyle"
             app:smsp_errorText="@string/sample_error_message"
             app:smsp_hint="Re-Selectable Spinner"
-            app:smsp_isReSelectable="true"
-            app:smsp_typeface="@font/hinted_cello_sans_medium_italic" />
+            app:smsp_isReSelectable="true" />
 
         <TextView
             style="@style/headerTextStyle"
@@ -50,6 +48,7 @@
             style="@style/spinnerStyle"
             app:smsp_errorText="@string/sample_error_message"
             app:smsp_hint="Province (Dropdown Mode)"
+            app:smsp_isRtl="true"
             app:smsp_multilineError="false" />
 
         <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
