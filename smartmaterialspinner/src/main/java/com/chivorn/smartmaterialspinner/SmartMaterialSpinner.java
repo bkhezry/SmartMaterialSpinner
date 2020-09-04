@@ -18,6 +18,7 @@ import android.graphics.drawable.LayerDrawable;
 import android.graphics.drawable.NinePatchDrawable;
 import android.graphics.drawable.StateListDrawable;
 import android.os.Build;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.fragment.app.FragmentManager;
@@ -26,6 +27,7 @@ import androidx.core.content.res.ResourcesCompat;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.content.res.AppCompatResources;
 import androidx.appcompat.widget.AppCompatSpinner;
+
 import android.text.Layout;
 import android.text.StaticLayout;
 import android.text.TextPaint;
@@ -677,7 +679,9 @@ public class SmartMaterialSpinner<T> extends AppCompatSpinner implements Adapter
     }
 
     private void drawSelector(Canvas canvas, int posX, int posY) {
-        posX = 58;
+        if (isRtl) {
+            posX = 58;
+        }
         paint.setColor(isEnabled() ? arrowColor : disabledColor);
         Point point1 = selectorPoints[0];
         Point point2 = selectorPoints[1];
